@@ -20,3 +20,7 @@ copy_files() {
 
 # Run the copy
 copy_files
+
+
+# Make it executable:
+# chmod +x copy-from-win.sh

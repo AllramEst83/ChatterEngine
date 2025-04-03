@@ -27,3 +27,7 @@ if [ $? -eq 0 ]; then
 else
     echo "❌ Extraction failed!"
 fi
+
+
+# Make it executable:
+# chmod +x unpack-tar-gz.sh
