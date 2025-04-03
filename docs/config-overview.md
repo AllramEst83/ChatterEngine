@@ -5,6 +5,35 @@ Each ChatterEngine module is configured using a dedicated YAML file inside the `
 This setup allows hot-swapping of models and quick reconfiguration without modifying source code.
 
 ---
+```txt
+chatterengine/
+├── stt/                    # Speech-to-Text (ASR) models
+│   ├── swedish_model/      # Swedish-trained ESPnet2 output (symlink or export)
+│   └── english_model/      # English ASR (e.g., pre-trained Wav2Vec2)
+│
+├── nmt/                    # Neural Machine Translation
+│   ├── sv_to_en/           # Swedish → English Transformer model
+│   └── en_to_sv/           # English → Swedish
+│
+├── tts/                    # Text-to-Speech synthesis
+│   ├── english_voice/      # Pretrained or custom Coqui/ESPnet model
+│   └── swedish_voice/      # Trained Tacotron2 / FastSpeech2
+│
+├── config/                 # YAML configs for all modules
+│   ├── stt_config.yaml
+│   ├── nmt_config.yaml
+│   ├── tts_config.yaml
+│   └── lang_map.yaml      # Optional: map language codes to configs
+│
+├── serve/                  # API + real-time pipeline handlers
+│   ├── api/                # FastAPI/gRPC endpoints (e.g., stt_service.py)
+│   └── pipeline/           # Combined handler logic for full pipeline
+│
+├── scripts/                # Data prep, training triggers, conversion tools
+├── data/                   # Sample WAVs, tokenizers, vocab files
+└── models/                 # Optional: symlink to large pretrained models
+```
+---
 
 ## 🔊 STT Configuration
 

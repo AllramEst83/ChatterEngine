@@ -1,0 +1,6 @@
+language: sv
+model_path: "stt/swedish_model/exp/model.pth"
+asr_config: "stt/swedish_model/config.yaml"
+sample_rate: 16000
+use_gpu: true
+decoder: beam

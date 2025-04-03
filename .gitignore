@@ -1,12 +1,15 @@
-# Byte-compiled / cache
-__pycache__/
-*.py[cod]
-*.so
-*.ipynb_checkpoints
-
 # Virtual environments
 venv/
 .env/
+chatter-env-py310/
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter artifacts
+.ipynb_checkpoints/
 
 # Logs
 *.log
@@ -15,25 +18,22 @@ venv/
 *.yaml~
 *.bak
 
-# IDE files
+# IDE/editor settings
 .vscode/
 .idea/
 
-# Output and export directories
+# Output and generated media
 output/
 *.wav
 
-# Model files
+# Model files and weights
 models/
 *.pth
 *.npz
 
-# Dataset storage
+# Dataset files (keep data external to repo)
 datasets/
 *.tar.gz
 
-# Jupyter checkpoints
-.ipynb_checkpoints/
-
-# Test temp files
+# Temporary files
 tmp/

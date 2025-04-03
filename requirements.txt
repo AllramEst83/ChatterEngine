@@ -1,0 +1,10 @@
+sentencepiece
+phonemizer
+soundfile
+numpy
+scipy
+pandas
+tqdm
+matplotlib
+espnet
+espnet_model_zoo
