@@ -1,0 +1,39 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+*.ipynb_checkpoints
+
+# Virtual environments
+venv/
+.env/
+
+# Logs
+*.log
+
+# Config artifacts
+*.yaml~
+*.bak
+
+# IDE files
+.vscode/
+.idea/
+
+# Output and export directories
+output/
+*.wav
+
+# Model files
+models/
+*.pth
+*.npz
+
+# Dataset storage
+datasets/
+*.tar.gz
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Test temp files
+tmp/
