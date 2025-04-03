@@ -4,7 +4,7 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Default Windows Downloads path
-WIN_DOWNLOADS="/mnt/c/Users/kay.wiberg/Downloads"
+WIN_DOWNLOADS="/mnt/c/Users/kaywi/Downloads"
 
 # Check if file argument was provided
 if [ -z "$1" ]; then

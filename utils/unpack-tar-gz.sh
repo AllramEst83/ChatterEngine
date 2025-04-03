@@ -44,6 +44,9 @@ else
 fi
 
 
+# Make it executable:
+# chmod +x unpack-tar-gz.sh
+
 # Basic usage (extract to ./archive-name)
 # ./unpack-tar-gz.sh my-archive.tar.gz
 
