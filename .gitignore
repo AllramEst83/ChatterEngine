@@ -3,6 +3,10 @@ venv/
 .env/
 chatter-env-py310/
 
+# External projects
+espnet/
+kaldi/
+
 # Python bytecode/cache
 __pycache__/
 *.py[cod]
